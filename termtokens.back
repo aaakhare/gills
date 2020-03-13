@@ -1,0 +1,41 @@
+token_t preptokens[8] = {
+    { "\$", 0 },    /*    DOLLAR     */
+    { "[0-9]+", 0 },    /*    NUM     */
+    { "\|", 0 },    /*    PIPE     */
+    { "\;", 0 },    /*    SEMICOLON     */
+    { "", 0 },    /*    LEFTBRACEPCENT     */
+    { "%}", 0 },    /*    PCENTRIGHTBRACE    */
+    { "\{", 0 },    /*    LEFTBRACE     */
+    { "\}", 0 },    /*    RIGHTBRACE     */
+    { "\%\%", 0 },    /*    DOUBLEPCENT     */
+    { "\\\'", 0 },    /*    ESCQUOTE     */
+    { "\\\"", 0 },    /*    ESCDOUBLEQUOTE     */
+    { "\'", 0 },    /*    QUOTE     */
+    { "\"", 0 },    /*    DOUBLEQUOTE     */
+    { "[\n\r]+", 0 },    /*    NEWLINE     */
+    { "\%token", 0 },    /*    PCENTTOKEN     */
+    { "\%type", 0 },    /*    PCENTTYPE     */
+    { "\<", 0 },    /*    LEFTANGLEBRACKT     */
+    { "\>", 0 },    /*    RIGHTANGLEBRACKT     */
+    { "\%left", 0 },    /*    PCENTLEFT     */
+    { "\%right", 0 },    /*    PCENTRIGHT     */
+    { "\%precedence", 0 },    /*    PCENTPREC     */
+    { "\%union", 0 },    /*    PCENTUNION     */
+    { "api", 0 },    /*    API     */
+    { "\.", 0 },    /*    DOT     */
+    { "value", 0 },    /*    VALUE     */
+    { "TYPE", 0 },    /*    TYPE     */
+    { "union", 0 },    /*    UNION     */
+    { "NAME", 0 },    /*    NAME     */
+    { "\/\/", 0 },    /*    SLINECOMMENTSTART     */
+    { "[ \t]+", 0 },    /*    WSPACE     */
+    { "\/\*", 0 },    /*    COMMENTSTART     */
+    { \*\/"", 0 },    /*    COMMENTEND     */
+    { "prefix", 0 },    /*    PREFIX     */
+    { "TOKEN", 0 },    /*    TOKEN     */
+    { "\%define", 0 },    /*    PCENTDEFINE     */
+    { "\:", 0 },    /*    COLON     */
+    { "\%", 0 },    /*    PCENT     */
+    { "[a-zA-Z0-9]", 0 },    /*    NAMESTRING     */
+    { "[ \t\r\n#<>\.a-zA-Z_+*\\\/\{\[\]\:\;=\-\$\"\`\'\(\)\^]+", 0 },    /*    CWORD     */
+
